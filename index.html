@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Direction des Finances - Métro d'Alger</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    h1 {
+      color: #0056b3;
+    }
+    section {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      background: #007BFF;
+      color: white;
+      margin: 10px 0;
+      padding: 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    li:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo-metro-alger.png" alt="Logo Métro d'Alger" style="width:120px; margin-bottom:10px;">
+    <h1>Direction des Finances</h1>
+    <p>Entreprise Métro d'Alger</p>
+  </header>
+
+  <section>
+    <h2>Les Départements</h2>
+    <ul>
+      <li id="metro">Département Métro</li>
+      <li id="tramway">Département Tramway et Transport par câble</li>
+      <li id="comptabilite">Département Comptabilité</li>
+      <li id="tresorerie">Département Trésorerie</li>
+    </ul>
+  </section>
+
+  <script>
+    document.querySelectorAll('li').forEach(item => {
+      item.addEventListener('click', () => {
+        alert('Vous avez sélectionné : ' + item.textContent);
+      });
+    });
+  </script>
+
+</body>
+</html>
